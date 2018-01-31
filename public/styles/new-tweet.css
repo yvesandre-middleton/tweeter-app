@@ -1,0 +1,138 @@
+.counter {
+  float: right;
+  padding: .5em;
+}
+
+main {
+
+}
+
+main h2 {
+  border-bottom: 2px solid black;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+
+
+.new-tweet {
+  padding: 2em;
+  background-color: grey;
+  border-radius: 25px;
+  margin: 2em;
+}
+
+.red {
+  color: red;
+}
+
+/*.tweet-header div {
+  float: right;
+}*/
+
+.tweet header {
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+  background-color: #eee;
+  height: 50px;
+}
+
+
+.tweet footer {
+  border-top: 1px solid;
+}
+
+.tweet {
+  border-radius: 17px;
+  margin: 2em;
+  border: 1px solid grey;
+}
+
+.tweet-content {
+  padding: 5px;
+  margin: 0;
+  height: 70px;
+  padding-top: 25px;
+  word-wrap:break-word;
+}
+
+
+.name {
+float: left;
+padding-left: 20px;
+font-size: 20px;
+margin-top: 12px;
+}
+
+.handle {
+  float: right;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.tweet footer {
+  padding: 0.5em;
+}
+
+.handle-logo {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.tweet.hover {
+  border-radius: 17px;
+  border: 1px solid black;
+
+}
+
+.tweet.hover .tweet-header {
+  background-color: grey;
+  color: black;
+
+}
+
+.icons {
+  float: right;
+  opacity: 0;
+}
+
+.tweet.hover .icons {
+  opacity: 1;
+}
+
+.error1 {
+  display: none;
+  color: red;
+}
+
+.error2 {
+  display: none;
+  color: red;
+}
+
+.displayErrors {
+  display: block;
+
+}
+
+.compose-button {
+  float: right;
+  background-color: grey;
+  color: black;
+  margin-top: 12px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 40px;
+  opacity: 1;
+}
+
+.compose-button:hover {
+  opacity: 0.8;
+}
+
