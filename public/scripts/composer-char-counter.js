@@ -9,13 +9,13 @@ $( document ).ready(function() {
         $('.error1').addClass('displayErrors')
       } else if ($('textarea').val().length === 0) {
         $('.error2').addClass('displayErrors')
-      }else {
+      } else {
         $('.new-tweet .counter').removeClass("red");
         $('.error1').removeClass('displayErrors')
         $('.error2').removeClass('displayErrors')
       }
       console.log( $(this).val().length); //The this keyword is a reference to the button
-});
+    });
 });
 
 
