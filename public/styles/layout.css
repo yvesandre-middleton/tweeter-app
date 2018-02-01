@@ -27,6 +27,11 @@ main {
   background-color: white;
   padding-top: 140px;
 }
+
+.container {
+  padding-top: 5%;
+  padding-bottom: 0.5em;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

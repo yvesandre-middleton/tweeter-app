@@ -125,14 +125,20 @@ margin-top: 12px;
   float: right;
   background-color: grey;
   color: black;
-  margin-top: 12px;
+  margin-top: 8px;
   border-radius: 5px;
   border: 1px solid black;
-  font-size: 40px;
+  font-size: 26px;
   opacity: 1;
+  height: 65px;
+  width: 164px;
 }
 
 .compose-button:hover {
   opacity: 0.8;
+}
+
+.far {
+  float: left;
 }
 
