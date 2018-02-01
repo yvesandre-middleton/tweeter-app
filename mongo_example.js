@@ -1,26 +1,25 @@
 "use strict";
 
-const {MongoClient} = require("mongodb");
-const MONGODB_URI = "mongodb://localhost:27017/tweeter";
+const {MongoClient} = require("mongodb")
+const MONGODB_URI = "mongodb://localhost:27017/tweeter"
 
 MongoClient.connect(MONGODB_URI, (err, db) => {
   if (err) {
-    console.error(`Failed to connect: ${MONGODB_URI}`);
-    throw err;
+    console.error(`Failed to connect: ${MONGODB_URI}`)
+    throw err
   }
 
   // We have a connection to the "tweeter" db, starting here.
-  console.log(`Connected to mongodb: ${MONGODB_URI}`);
-
+  console.log(`Connected to mongodb: ${MONGODB_URI}`)
   // ==> Refactored and wrapped as new, tweet-specific function:
 
   function getTweets(callback) {
     db.collection("tweeter").find().toArray((err, tweets) => {
       if (err) {
-        return callback(err);
+        return callback(err)
       }
-      callback(null, tweets);
-    });
+      callback(null, tweets)
+    })
   }
 
   // ==> Later it can be invoked. Remember even if you pass
@@ -28,14 +27,14 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   //     `db`, so it will still work. Yay!
 
   getTweets((err, tweets) => {
-    if (err) throw err;
+    if (err) throw err
 
-    console.log("Logging each tweet:");
+    console.log("Logging each tweet:")
     for (let tweet of tweets) {
-      console.log(tweet);
+      console.log(tweet)
     }
 
-    db.close();
-  });
+    db.close()
+  })
 
-});
+})

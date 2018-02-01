@@ -4,9 +4,9 @@ Tweeter App is a twitter clone that allows the creation of tweets which are adde
 
 ## Final Product
 
-!["This is the main page populated with tweets and with the compose box visible and with hover shown on compose button"]()
-!["This is the main page populated with tweets and with the compose box folded up and with hover shown on the tweets"]()
-!["This is the main page populated with tweets and with an error message saying the tweet is too long. Notice the counter is also red when over 140 characters"]()
+!["This is the main page populated with tweets and with text in the compose box"](https://github.com/yvesandre-middleton/tweeter-app/blob/master/docs/mainscreen-textbox-has-input.png?raw=true)
+!["This is the main page populated with tweets and with the compose box folded up"](https://github.com/yvesandre-middleton/tweeter-app/blob/master/docs/compose-form-folded-up.png?raw=true)
+!["This is the main page populated with tweets and with an error message saying the tweet is too long. Notice the counter is also red when over 140 characters"](https://github.com/yvesandre-middleton/tweeter-app/blob/master/docs/message-too-long-error.png?raw=true)
 
 
 ## Dependencies

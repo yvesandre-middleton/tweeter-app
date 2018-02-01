@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 const userHelper    = require("../lib/util/user-helper")
 
@@ -14,13 +14,13 @@ module.exports = function(DataHelpers) {
       } else {
         res.json(tweets)
       }
-    });
-  });
+    })
+  })
 
   tweetsRoutes.post("/", function(req, res) {
     if (!req.body.text) {
       res.status(400).json({ error: 'invalid request: no data in POST body'})
-      return;
+      return
     }
 
     const user = req.body.user ? req.body.user : userHelper.generateRandomUser()
@@ -30,7 +30,7 @@ module.exports = function(DataHelpers) {
         text: req.body.text
       },
       created_at: Date.now()
-    };
+    }
 
     DataHelpers.saveTweet(tweet, (err) => {
       if (err) {
@@ -38,8 +38,8 @@ module.exports = function(DataHelpers) {
       } else {
         res.status(201).send()
       }
-    });
-  });
+    })
+  })
 
   return tweetsRoutes
 

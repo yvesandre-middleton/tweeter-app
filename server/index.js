@@ -1,27 +1,26 @@
-"use strict";
+"use strict"
 
 // Basic express setup:
 
 const PORT          = 8080;
-const express       = require("express");
-const bodyParser    = require("body-parser");
-const app           = express();
+const express       = require("express")
+const bodyParser    = require("body-parser")
+const app           = express()
 
 // Mongo db setup
-const {MongoClient} = require("mongodb");
-const MONGODB_URI = "mongodb://localhost:27017/tweets";
+const {MongoClient} = require("mongodb")
+const MONGODB_URI = "mongodb://localhost:27017/tweets"
 
 // Connect to mongo db and check for errors
 MongoClient.connect(MONGODB_URI, (err, db) => {
   if (err) {
-    console.error(`Failed to connect: ${MONGODB_URI}`);
+    console.error(`Failed to connect: ${MONGODB_URI}`)
     throw err;
   }
-  console.log(`connected to mongo db: ${MONGODB_URI}`);
+  console.log(`connected to mongo db: ${MONGODB_URI}`)
 
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static("public"))
 
 
 // The `data-helpers` module provides an interface to the database of tweets.
@@ -30,17 +29,16 @@ app.use(express.static("public"));
 //
 // Because it exports a function that expects the `db` as a parameter, we can
 // require it and pass the `db` parameter immediately:
-const DataHelpers = require("./lib/data-helpers.js")(db);
+const DataHelpers = require("./lib/data-helpers.js")(db)
 
 // The `tweets-routes` module works similarly: we pass it the `DataHelpers` object
 // so it can define routes that use it to interact with the data layer.
-const tweetsRoutes = require("./routes/tweets")(DataHelpers);
+const tweetsRoutes = require("./routes/tweets")(DataHelpers)
 
 // Mount the tweets routes at the "/tweets" path prefix:
-app.use("/tweets", tweetsRoutes);
+app.use("/tweets", tweetsRoutes)
 
 app.listen(PORT, () => {
-  console.log("Example app listening on port " + PORT);
-});
-
-});
+  console.log("Example app listening on port " + PORT)
+})
+})

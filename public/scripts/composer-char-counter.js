@@ -9,7 +9,7 @@ $( document ).ready(function() {
       $('.counter').text(140 - charCount)
       console.log(charCount)
       if (charCount > 140) {
-        $('.new-tweet .counter').addClass("red");
+        $('.new-tweet .counter').addClass("red")
         $('.error1').addClass('displayErrors')
       } else if ($('textarea').val().length === 0) {
         $('.error2').addClass('displayErrors')
@@ -19,7 +19,7 @@ $( document ).ready(function() {
         $('.error2').removeClass('displayErrors')
       }
       console.log( $(this).val().length) //The this keyword is a reference to the button
-    });
-});
+    })
+})
 
 
