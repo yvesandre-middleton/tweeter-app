@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type='text/css' />
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type='text/css' />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -25,20 +26,20 @@
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-
   </head>
 
   <body>
 
     <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
+    <nav id="nav-bar" class="navi-bar">
       <img class="logo" src="/images/bird.png">
-      <span class="header">Tweeter</span>
+      <span class="nav-header">Tweeter</span>
       <button class="compose-button"><i class="far fa-edit"></i>Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!--- Form is for inputting tweets -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
           <form class='my-form' method="POST" action="/tweets/">
@@ -49,17 +50,14 @@
                 <p class="error2">message not present</p>
           </form>
       </section>
+      <!--- Section builds new tweets -->
       <section class="all-tweets">
             <article class="tweet">
-             <!--  <header class="tweet-header"><img class="handle-logo" src="/images/twitter1.png"><p class="name">Yves Middleton</p><p class="handle">@yvesmiddleton</p></header>
-              <p class="tweet-content">This is a tweet!</p>
-               <footer>10 days ago -->
                 <div class="icons">
-              <i class="fa fa-flag" aria-hidden="true"></i>
-              <i class="fa fa-retweet" aria-hidden="true"></i>
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              </div>
-            </footer>
+                  <i class="fa fa-flag" aria-hidden="true"></i>
+                  <i class="fa fa-retweet" aria-hidden="true"></i>
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
             </article>
       </section>
     </main>

@@ -1,17 +1,33 @@
-# Tweeter Project
+# Tweeter Application
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter App is a twitter clone that allows the creation of tweets which are added to a mongo database and can be viwed on the main page.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+## Final Product
 
-## Getting Started
+!["This is the main page populated with tweets and with the compose box visible and with hover shown on compose button"]()
+!["This is the main page populated with tweets and with the compose box folded up and with hover shown on the tweets"]()
+!["This is the main page populated with tweets and with an error message saying the tweet is too long. Notice the counter is also red when over 140 characters"]()
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
+- Node.js
 - Express
-- Node 5.10.x or above
+- Mongo DB
+- body-parser
+- Chance
+- md5
+
+## Getting started
+
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `npm run start` command in the terminal while inside the folder directory
+
+# Creator Information
+
+- Yves-André Middleton
+- Created February 1 2018
+- Created while at Lighthouse Labs Web Development bootcamp. January 2018 Cohort.
+- Direct questions to yvesmiddleton@gmail.com
+- Github: https://github.com/yvesandre-middleton
+- Linkedin: https://www.linkedin.com/in/yves-andr%C3%A9-middleton-04424661/

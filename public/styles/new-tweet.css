@@ -1,22 +1,9 @@
+
+/*CSS for new tweets and the tweet form */
 .counter {
   float: right;
   padding: .5em;
 }
-
-main {
-
-}
-
-main h2 {
-  border-bottom: 2px solid black;
-}
-
-textarea {
-  width: 100%;
-  padding: 5px;
-}
-
-
 
 .new-tweet {
   padding: 2em;
@@ -28,10 +15,6 @@ textarea {
 .red {
   color: red;
 }
-
-/*.tweet-header div {
-  float: right;
-}*/
 
 .tweet header {
   border-top-right-radius: 17px;
@@ -54,9 +37,9 @@ textarea {
 .tweet-content {
   padding: 5px;
   margin: 0;
-  height: 70px;
-  padding-top: 25px;
+  padding-top: 5%;
   word-wrap:break-word;
+  padding-bottom: 5%;
 }
 
 
@@ -108,37 +91,29 @@ margin-top: 12px;
 
 .error1 {
   display: none;
-  color: red;
+  color: white;
+  background-color: red;
+  width: 50%;
+  height: 3em;
+  padding-left: 4%;
+  padding-top: 4%;
+  border: 2px solid white;
+  border-radius: 0.5em;
 }
 
 .error2 {
   display: none;
-  color: red;
+  color: white;
+  background-color: red;
+  width: 50%;
+  height: 3em;
+  padding-left: 4%;
+  padding-top: 4%;
+  border: 2px solid white;
+  border-radius: 0.5em;
 }
 
 .displayErrors {
   display: block;
 
 }
-
-.compose-button {
-  float: right;
-  background-color: grey;
-  color: black;
-  margin-top: 8px;
-  border-radius: 5px;
-  border: 1px solid black;
-  font-size: 26px;
-  opacity: 1;
-  height: 65px;
-  width: 164px;
-}
-
-.compose-button:hover {
-  opacity: 0.8;
-}
-
-.far {
-  float: left;
-}
-
