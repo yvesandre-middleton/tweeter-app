@@ -1,6 +1,6 @@
 # Tweeter Application
 
-Tweeter App is a twitter clone that allows the creation of tweets which are added to a mongo database and can be viwed on the main page.
+Tweeter App is a twitter clone that allows the creation of tweets which are added to a mongo database and can be viewed on the main page.
 
 ## Final Product
 
